@@ -5,18 +5,18 @@ const About = () => {
     const socials = [
         {
             icon: Linkedin,
-            link: "",
-            color : "#0A66C2"
+            link: "https://www.linkedin.com/in/akash-dhiwar-b448051a9/",
+            color: "#0A66C2"
         },
         {
             icon: Twitter,
-            link: "",
-            color : "#1DA1F2"
+            link: "https://x.com/akashgotnochill",
+            color: "#1DA1F2"
         },
         {
             icon: Github,
-            link: "",
-            color : "#d4d4d4"
+            link: "https://github.com/Akshdhiwar",
+            color: "#d4d4d4"
         }
     ]
 
@@ -31,8 +31,8 @@ const About = () => {
                 <div className="flex gap-2">
                     {
                         socials.map(social => (
-                            <a href={social.link}>
-                                <social.icon fill={social.color} color={social.color}  height={22}></social.icon>
+                            <a href={social.link} target="_blank">
+                                <social.icon fill={social.color} color={social.color} height={22}></social.icon>
                             </a>
                         ))
                     }

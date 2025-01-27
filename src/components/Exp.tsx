@@ -13,7 +13,7 @@ const Exp = () => {
         },
         {
             time: "01/2025 - Present",
-            role: "Software Developer engineer 2 @ AECINSPIRE",
+            role: "Software Developer Engineer 2 @ AECINSPIRE",
             comment: "As the company structure was reformed I was assigned role of SDE 2 but this is equivalent to SDE 1 compared to market standards."
         }
     ]

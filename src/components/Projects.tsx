@@ -6,32 +6,23 @@ const Projects = () => {
     const projects = [
         {
             name: "Documentthing",
-            tools: "[React, Golang , Tailwind , Redis]",
+            tools: "[React, Golang , Tailwind , Redis, Axios]",
             active: true,
             tags: [
                 {
-                    title: "[P]",
-                    color: "text-blue-500"
-                },
-                {
                     title: "[SAAS]",
-                    color: "text-red-500"
+                    color: "text-cyan-400"
                 }
             ],
-            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur repellat accusantium, sint quisquam omnis nesciunt beatae corporis architecto placeat quas. A ut beatae numquam culpa consequatur praesentium quasi similique, iste commodi eum possimus officiis delectus in assumenda alias. Et vel dicta alias molestiae, nihil iste, corrupti explicabo hic quibusdam odio a rerum iusto sed reiciendis enim debitis. Odit cum ad, numquam iure ratione recusandae provident aliquam. Quibusdam, unde veniam. Assumenda, maiores corrupti. Obcaecati nulla non ratione sequi maxime veniam tempora. Veritatis, temporibus placeat repellat deleniti itaque maiores esse eos vitae voluptas quaerat rem ex voluptatibus atque illo vero. Quisquam, quae.",
+            description: "Meet DocumentThing — a documentation tool designed to make life easier for developers. I’ve been where you are, battling clunky tools that break your flow. That’s why I created DocumentThing—a simple, powerful solution to help you document your code without the headaches. Save your docs directly to GitHub, collaborate with your teammates, and export in Markdown or HTML with ease. The rich-text editor makes writing a breeze, and inviting your team to contribute is seamless. And soon, you’ll even be able to publish your docs online in just one click. It’s everything you need to document smarter, not harder.",
             link: "https://www.documentthing.com"
         },
         {
             name: "Dumbles.io",
-            tools: "[React, Golang , Tailwind , Redis, Stripe]",
+            tools: "[React, Golang , Tailwind , Redis, Axios, Stripe]",
             active: false,
-            tags: [
-                {
-                    title: "[P]",
-                    color: "text-blue-500"
-                }
-            ],
-            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur repellat accusantium, sint quisquam omnis nesciunt beatae corporis architecto placeat quas. A ut beatae numquam culpa consequatur praesentium quasi similique, iste commodi eum possimus officiis delectus in assumenda alias. Et vel dicta alias molestiae, nihil iste, corrupti explicabo hic quibusdam odio a rerum iusto sed reiciendis enim debitis. Odit cum ad, numquam iure ratione recusandae provident aliquam. Quibusdam, unde veniam. Assumenda, maiores corrupti. Obcaecati nulla non ratione sequi maxime veniam tempora. Veritatis, temporibus placeat repellat deleniti itaque maiores esse eos vitae voluptas quaerat rem ex voluptatibus atque illo vero. Quisquam, quae.",
+            tags: [],
+            description: "To deepen my understanding of modern web development, I built a fully functional e-commerce application using React on the frontend and Go on the backend. This project allowed me to explore key concepts like state management, component design, and API integration in React, while also honing my backend skills with Go for handling secure and efficient server-side operations. I integrated Stripe for seamless payment processing, which provided valuable insights into handling payment workflows and managing sensitive data. This hands-on experience not only strengthened my technical skills but also gave me a holistic view of building and deploying full-stack applications.",
             link: "https://dumbles.vercel.app/dashboard"
         },
     ]
@@ -51,7 +42,7 @@ const Projects = () => {
                                             e.tags.map(ele => (
                                                 <p className={`${ele.color}`}>{ele.title}&nbsp;</p>
                                             ))
-                                        } <a href={e.link} className="animate-bounce"><ArrowUpRight height={20} /></a>
+                                        } <a href={e.link} className="animate-pulse"><ArrowUpRight height={20} /></a>
                                     </div>
                                     <div className="text-orange-500">
                                         {e.tools}

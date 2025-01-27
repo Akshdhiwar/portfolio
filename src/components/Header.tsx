@@ -5,7 +5,7 @@ const navItems = [
 
 const Header = () => {
   return (
-    <section className="flex gap-4">
+    <section className="flex gap-4 ">
       <img className="h-16 w-16 rounded-full" src="https://github.com/shadcn.png" alt="@Akash" />
       <div className="flex flex-col gap-2">
         <p className="text-xl font-bold sm:text-2xl">Akash Dhiwar</p>
