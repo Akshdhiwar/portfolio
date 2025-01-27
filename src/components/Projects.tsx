@@ -1,3 +1,4 @@
+import { ArrowUpRight } from "lucide-react"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./ui/tooltip"
 
 const Projects = () => {
@@ -18,6 +19,7 @@ const Projects = () => {
                 }
             ],
             description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur repellat accusantium, sint quisquam omnis nesciunt beatae corporis architecto placeat quas. A ut beatae numquam culpa consequatur praesentium quasi similique, iste commodi eum possimus officiis delectus in assumenda alias. Et vel dicta alias molestiae, nihil iste, corrupti explicabo hic quibusdam odio a rerum iusto sed reiciendis enim debitis. Odit cum ad, numquam iure ratione recusandae provident aliquam. Quibusdam, unde veniam. Assumenda, maiores corrupti. Obcaecati nulla non ratione sequi maxime veniam tempora. Veritatis, temporibus placeat repellat deleniti itaque maiores esse eos vitae voluptas quaerat rem ex voluptatibus atque illo vero. Quisquam, quae.",
+            link: "https://www.documentthing.com"
         },
         {
             name: "Dumbles.io",
@@ -30,11 +32,12 @@ const Projects = () => {
                 }
             ],
             description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur repellat accusantium, sint quisquam omnis nesciunt beatae corporis architecto placeat quas. A ut beatae numquam culpa consequatur praesentium quasi similique, iste commodi eum possimus officiis delectus in assumenda alias. Et vel dicta alias molestiae, nihil iste, corrupti explicabo hic quibusdam odio a rerum iusto sed reiciendis enim debitis. Odit cum ad, numquam iure ratione recusandae provident aliquam. Quibusdam, unde veniam. Assumenda, maiores corrupti. Obcaecati nulla non ratione sequi maxime veniam tempora. Veritatis, temporibus placeat repellat deleniti itaque maiores esse eos vitae voluptas quaerat rem ex voluptatibus atque illo vero. Quisquam, quae.",
+            link: "https://dumbles.vercel.app/dashboard"
         },
     ]
 
     return (
-        <section className="mt-16">
+        <section className="mt-16" id="Projects">
             <p className="text-xl font-semibold mb-4">Projects</p>
             <dl className="space-y-3">
                 {
@@ -48,7 +51,7 @@ const Projects = () => {
                                             e.tags.map(ele => (
                                                 <p className={`${ele.color}`}>{ele.title}&nbsp;</p>
                                             ))
-                                        }
+                                        } <a href={e.link} className="animate-bounce"><ArrowUpRight height={20} /></a>
                                     </div>
                                     <div className="text-orange-500">
                                         {e.tools}

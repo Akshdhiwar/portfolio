@@ -21,10 +21,10 @@ const About = () => {
     ]
 
     return (
-        <section className='pt-16'>
+        <section className='pt-16' id="About">
             <p className="text-xl font-semibold">Hi there,</p>
             <p className="pt-4">
-                Building <a href="" className="underline underline-offset-4">Documentthing</a> - a code documentation creation platform that seamlessly integrates with github. With some side projects have 2+ years of experience in creating, breaking, fixing UI's and Functionality across the web. Tinkering around to gain knowledge how to build high-scalable systems and architectural stuff.
+                Building <a href="https://www.documentthing.com/" target="_blank" className="underline underline-offset-4">Documentthing</a> - a code documentation creation platform that seamlessly integrates with github. With some side projects have 2+ years of experience in creating, breaking, fixing UI's and Functionality across the web. Tinkering around to gain knowledge how to build high-scalable systems and architectural stuff.
             </p>
             <div className="pt-6 flex items-center gap-3">
                 <p>Find me on</p>

@@ -19,7 +19,7 @@ const Exp = () => {
     ]
 
     return (
-        <section className="mt-16">
+        <section className="mt-16" id="Experience">
             <p className="text-xl font-semibold mb-4">Experience</p>
             <div>
                 <dl className="space-y-4">

@@ -24,7 +24,7 @@ const Tech = () => {
     return (
         <section className="mt-16">
             <p className="text-xl font-semibold mb-4">Technologies I have worked with</p>
-            <p className="mb-4">The below mentioned list is a subset of all type of stack I have worked with, you can checkout my <a href="" className="underline">projects</a>  to know more.</p>
+            <p className="mb-4">The below mentioned list is a subset of all type of stack I have worked with, you can checkout my <a href="#Projects" className="underline">projects</a>  to know more.</p>
             <div>
                 <dl className="space-y-4">
                     {

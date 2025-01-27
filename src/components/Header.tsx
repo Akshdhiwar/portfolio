@@ -12,12 +12,12 @@ const Header = () => {
         <div className="text-green-500 flex divide-dashed divide-x divide-green-500">
           {
             navItems.map((name) => (
-              <span
+              <a href={`#${name}`}
                 key={name}
                 className="underline-offset-2 hover:underline hover:cursor-pointer px-3 first:pl-0 last:pr-0 p-0"
               >
                 {name}
-              </span>
+              </a>
             ))
           }
 
