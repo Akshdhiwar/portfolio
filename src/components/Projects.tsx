@@ -6,7 +6,7 @@ const Projects = () => {
     const projects = [
         {
             name: "Documentthing",
-            tools: "[React, Golang , Tailwind , Redis, Axios]",
+            tools: "[React, Golang , Tailwind , Axios, CloudFlare R2]",
             active: true,
             tags: [
                 {
@@ -42,7 +42,7 @@ const Projects = () => {
                                             e.tags.map(ele => (
                                                 <p className={`${ele.color}`}>{ele.title}&nbsp;</p>
                                             ))
-                                        } <a href={e.link} className="animate-pulse"><ArrowUpRight height={20} /></a>
+                                        } <a target="_blank" href={e.link} className="animate-pulse"><ArrowUpRight height={20} /></a>
                                     </div>
                                     <div className="text-orange-500">
                                         {e.tools}
