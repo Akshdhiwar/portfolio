@@ -4,8 +4,7 @@ A single-page portfolio site built with plain HTML and CSS — no frameworks, bu
 
 ## Structure
 
-- `index.html` — page markup
-- `style.css` — all styling
+- `index.html` — page markup and styling (CSS is inlined to avoid a render-blocking request)
 
 ## Running locally
 
