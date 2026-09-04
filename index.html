@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#18181b" />
 
   <title>Akash Dhiwar — Software Developer</title>
-  <meta name="description" content="Akash Dhiwar is a software developer building Documentthing, a code documentation platform. 2+ years of experience across React, Golang, and TypeScript." />
+  <meta name="description" content="Akash Dhiwar is a software developer building Documentthing, a code documentation platform. 3+ years of experience across React, Golang, and TypeScript." />
   <meta name="author" content="Akash Dhiwar" />
   <link rel="canonical" href="https://akashdhiwar.vercel.app/" />
 
@@ -15,7 +15,7 @@
   <meta property="og:url" content="https://akashdhiwar.vercel.app/" />
   <meta property="og:site_name" content="Akash Dhiwar" />
   <meta property="og:title" content="Akash Dhiwar — Software Developer" />
-  <meta property="og:description" content="Software developer building Documentthing, a code documentation platform. 2+ years of experience across React, Golang, and TypeScript." />
+  <meta property="og:description" content="Software developer building Documentthing, a code documentation platform. 3+ years of experience across React, Golang, and TypeScript." />
   <meta property="og:image" content="https://akashdhiwar.vercel.app/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -24,7 +24,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@akashgotnochill" />
   <meta name="twitter:title" content="Akash Dhiwar — Software Developer" />
-  <meta name="twitter:description" content="Software developer building Documentthing, a code documentation platform. 2+ years of experience across React, Golang, and TypeScript." />
+  <meta name="twitter:description" content="Software developer building Documentthing, a code documentation platform. 3+ years of experience across React, Golang, and TypeScript." />
   <meta name="twitter:image" content="https://akashdhiwar.vercel.app/og-image.png" />
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -268,7 +268,7 @@ section {
   margin: 1rem 0 0;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2.5rem;
 }
 
 .exp-item {
@@ -288,6 +288,36 @@ section {
   margin: 0;
   font-style: italic;
   color: var(--text-muted);
+}
+
+/* Timeline */
+.timeline-entries {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-left: 1rem;
+  border-left: 1px dashed var(--green);
+}
+
+.timeline-entry {
+  margin: 0;
+}
+
+.timeline-entry-date {
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}
+
+.timeline-entry-title {
+  margin: 0.125rem 0 0.375rem;
+  font-size: inherit;
+  font-weight: 600;
+}
+
+.timeline-year {
+  color: var(--green);
+  font-weight: 700;
 }
 
 /* Projects */
@@ -434,7 +464,7 @@ section {
     "url": "https://akashdhiwar.vercel.app/",
     "image": "https://akashdhiwar.vercel.app/profile.webp",
     "jobTitle": "Software Developer",
-    "description": "Software developer building Documentthing, a code documentation platform. 2+ years of experience across React, Golang, and TypeScript.",
+    "description": "Software developer building Documentthing, a code documentation platform. 3+ years of experience across React, Golang, and TypeScript.",
     "sameAs": [
       "https://www.linkedin.com/in/akash-dhiwar-b448051a9/",
       "https://x.com/akashgotnochill",
@@ -463,7 +493,7 @@ section {
       <section class="about" id="About">
         <h2 class="section-title">Hi there,</h2>
         <p class="about-text">
-          Building <a href="https://www.documentthing.com/" target="_blank" rel="noopener noreferrer" class="link">Documentthing</a> - a code documentation creation platform that seamlessly integrates with github. With some side projects have 2+ years of experience in creating, breaking, fixing UI's and Functionality across the web. Tinkering around to gain knowledge how to build high-scalable systems and architectural stuff.
+          Building <a href="https://www.documentthing.com/" target="_blank" rel="noopener noreferrer" class="link">Documentthing</a> — a code documentation platform that integrates seamlessly with GitHub. Day-to-day, I work on AECInspire, a 2D drawing/BIM application, where I've gone from UI fixes to owning real-time systems (WebSocket-based live cursors and multi-user presence) and authentication infrastructure (migrating auth from IdentityServer4 to AWS Cognito). I have 3+ years of experience building, breaking, and fixing UIs and functionality across the web, sharpened through side projects alongside my day-to-day work. Currently exploring how to design highly scalable systems and solid architecture.
         </p>
         <div class="socials">
           <p>Find me on</p>
@@ -506,13 +536,68 @@ section {
 
       <section class="exp" id="Experience">
         <h2 class="section-title">Experience</h2>
+        <p class="tech-intro">Dated highlights of what I've actually shipped in each role, most recent first.</p>
         <div class="exp-list">
           <div class="exp-item">
             <div class="exp-head">
               <div class="exp-time">01/2025 - Present</div>
               <div class="exp-role">Software Developer Engineer 2 @ AECINSPIRE</div>
             </div>
-            <p class="exp-comment">As the company structure was reformed I was assigned role of SDE 2 but this is equivalent to SDE 1 compared to market standards.</p>
+            <p class="exp-comment">Promoted to SDE 2 as part of a company-wide restructuring of engineering roles.</p>
+            <div class="timeline-entries">
+              <div class="timeline-year">2026</div>
+              <div class="timeline-entry">
+                <h3 class="timeline-entry-title">Real-Time Multi-User Presence &amp; Live Cursor Sharing</h3>
+                <p class="project-desc">Built a real-time presence system for the 2D drawing viewer showing which users are currently viewing or editing a shared sheet, with live cursor position and activity streamed between concurrent sessions over WebSocket.</p>
+                <div class="project-tools">[WebSocket, Real-Time Systems, Angular]</div>
+              </div>
+              <div class="timeline-entry">
+                <h3 class="timeline-entry-title">In-App Commenting</h3>
+                <p class="project-desc">Implemented in-app commenting on shared drawing sheets, built on the same real-time infrastructure as the presence and cursor feature.</p>
+                <div class="project-tools">[WebSocket, Angular]</div>
+              </div>
+              <div class="timeline-entry">
+                <h3 class="timeline-entry-title">WebSocket Real-Time Layer (POC)</h3>
+                <p class="project-desc">Built a proof-of-concept introducing WebSocket-based real-time communication into a previously request/response-only application, later extended into the presence and commenting features above.</p>
+                <div class="project-tools">[WebSocket, Architecture]</div>
+              </div>
+              <div class="timeline-entry">
+                <h3 class="timeline-entry-title">Dashboard Performance: Virtual Scroll</h3>
+                <p class="project-desc">Diagnosed a dashboard rendering bottleneck with large project lists and replaced full up-front rendering with a virtual scroll, rendering only the rows in view to reduce DOM load while keeping search and filtering working correctly.</p>
+                <div class="project-tools">[Performance, Angular, DOM Virtualization]</div>
+              </div>
+              <div class="timeline-entry">
+                <h3 class="timeline-entry-title">AWS Cognito Migration — Phase 2: Refresh-Token Flow</h3>
+                <p class="project-desc">Implemented a secure refresh-token mechanism for the Cognito migration — app-client token policy configuration, backend token validation and issuance, and secure client-side token storage — building on the Phase 1 migration below.</p>
+                <div class="project-tools">[AWS Cognito, Session Management, Auth/Security]</div>
+              </div>
+              <div class="timeline-entry">
+                <h3 class="timeline-entry-title">In-App Guided Product Tour</h3>
+                <p class="project-desc">Built a guided onboarding tour reproducing an existing Figma prototype natively inside the app, walking new users through the core create &rarr; upload &rarr; count &rarr; export workflow.</p>
+                <div class="project-tools">[Angular, Onboarding UX]</div>
+              </div>
+              <div class="timeline-year">2025</div>
+              <div class="timeline-entry">
+                <h3 class="timeline-entry-title">Configurable Default-Value Engine</h3>
+                <p class="project-desc">Designed and implemented a configuration engine letting default values be set for system fields on assemblies, auto-applied whenever assemblies are created or imported, removing repetitive manual data entry.</p>
+                <div class="project-tools">[Angular, Domain Config Engine]</div>
+              </div>
+              <div class="timeline-entry">
+                <h3 class="timeline-entry-title">AWS Cognito Migration — Phase 1</h3>
+                <p class="project-desc">Led the migration from a legacy IdentityServer4 system to AWS Cognito, implementing an OAuth2/OIDC token strategy that transitioned 100+ enterprise customers with zero credential disruption or forced password resets, while keeping the legacy system running for full backward compatibility throughout.</p>
+                <div class="project-tools">[AWS Cognito, OAuth2/OIDC, Auth/Security]</div>
+              </div>
+              <div class="timeline-entry">
+                <h3 class="timeline-entry-title">AWS CloudFront CDN Rollout</h3>
+                <p class="project-desc">Collaborated with the DevOps team to implement AWS CloudFront as a CDN for static assets, reducing static file load times by 80%.</p>
+                <div class="project-tools">[AWS CloudFront, DevOps, Performance]</div>
+              </div>
+              <div class="timeline-entry">
+                <h3 class="timeline-entry-title">Production Bug Resolution &amp; Reliability</h3>
+                <p class="project-desc">Resolved 75+ production-level bugs across the application, improving performance, UI consistency, and overall system reliability.</p>
+                <div class="project-tools">[Bug Fixing, Reliability, Angular]</div>
+              </div>
+            </div>
           </div>
           <div class="exp-item">
             <div class="exp-head">
@@ -520,11 +605,39 @@ section {
               <div class="exp-role">Junior UI Developer @ AECINSPIRE</div>
             </div>
             <p class="exp-comment">In this time period I transitioned from UI to full fledged Frontend Role.</p>
+            <div class="timeline-entries">
+              <div class="timeline-entry">
+                <div class="timeline-entry-date">2024</div>
+                <h3 class="timeline-entry-title">Akita State Management Integration</h3>
+                <p class="project-desc">Introduced Akita as the state management solution for the core Angular application, defining the state structure and integrating it across the app to improve code maintainability and application scalability.</p>
+                <div class="project-tools">[Angular, Akita, State Management]</div>
+              </div>
+              <div class="timeline-entry">
+                <div class="timeline-entry-date">2023</div>
+                <h3 class="timeline-entry-title">Auth0 Authentication POC</h3>
+                <p class="project-desc">Built a proof-of-concept for Auth0-based authentication ahead of a rebuilt application UI: prototyped user migration off the legacy database, a magic-link password-reset flow, and a new-user sign-up flow integrated with Stripe payments.</p>
+                <div class="project-tools">[Auth0, Stripe, Auth/Security]</div>
+              </div>
+              <div class="timeline-entry">
+                <div class="timeline-entry-date">2023 - 2024</div>
+                <h3 class="timeline-entry-title">Core Application UI/UX Rebuild</h3>
+                <p class="project-desc">Delivered a sustained, multi-quarter UI/UX rebuild of the application's primary screens — dashboard, file/folder management, navigation, toolbars, and dialog systems — resulting in a 30% improvement in user engagement and a 15–20% reduction in clicks for common workflows.</p>
+                <div class="project-tools">[Angular, SCSS, Responsive Design, UI/UX]</div>
+              </div>
+            </div>
           </div>
           <div class="exp-item">
             <div class="exp-head">
               <div class="exp-time">12/2022 - 05/2023</div>
               <div class="exp-role">Frontend Intern @ AECINSPIRE</div>
+            </div>
+            <div class="timeline-entries">
+              <div class="timeline-entry">
+                <div class="timeline-entry-date">2022 - 2023</div>
+                <h3 class="timeline-entry-title">Responsive Email Templates &amp; Modular UI Components</h3>
+                <p class="project-desc">Designed responsive email templates and built modular UI components under senior guidance, establishing a foundation for scalable and reusable elements.</p>
+                <div class="project-tools">[Responsive Design, UI Components]</div>
+              </div>
             </div>
           </div>
         </div>
