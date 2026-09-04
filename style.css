@@ -1,7 +1,7 @@
 :root {
   --bg: #18181b;
   --text: #d4d4d4;
-  --text-muted: #737373;
+  --text-muted: #8a8a8a;
   --green: #22c55e;
   --green-light: #4ade80;
   --orange: #f97316;
@@ -245,8 +245,8 @@ section {
   font-weight: 600;
 }
 
-.exp-head dt,
-.exp-head dd {
+.exp-time,
+.exp-role {
   margin: 0;
 }
 

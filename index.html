@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#18181b" />
 
   <title>Akash Dhiwar — Software Developer</title>
   <meta name="description" content="Akash Dhiwar is a software developer building Documentthing, a code documentation platform. 2+ years of experience across React, Golang, and TypeScript." />
@@ -31,15 +32,32 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="manifest" href="/site.webmanifest" />
   <link rel="stylesheet" href="style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Akash Dhiwar",
+    "url": "https://akashdhiwar.vercel.app/",
+    "image": "https://akashdhiwar.vercel.app/profile.webp",
+    "jobTitle": "Software Developer",
+    "description": "Software developer building Documentthing, a code documentation platform. 2+ years of experience across React, Golang, and TypeScript.",
+    "sameAs": [
+      "https://www.linkedin.com/in/akash-dhiwar-b448051a9/",
+      "https://x.com/akashgotnochill",
+      "https://github.com/Akshdhiwar"
+    ]
+  }
+  </script>
 </head>
 <body>
   <div class="page">
     <div class="container">
 
       <header class="header">
-        <img class="avatar" src="profile.webp" alt="Akash Dhiwar" />
+        <img class="avatar" src="profile.webp" alt="Akash Dhiwar" width="64" height="64" fetchpriority="high" />
         <div class="header-info">
-          <p class="name">Akash Dhiwar</p>
+          <h1 class="name">Akash Dhiwar</h1>
           <nav class="nav">
             <a href="#About">About</a>
             <a href="#Experience">Experience</a>
@@ -48,8 +66,9 @@
         </div>
       </header>
 
+      <main>
       <section class="about" id="About">
-        <p class="section-title">Hi there,</p>
+        <h2 class="section-title">Hi there,</h2>
         <p class="about-text">
           Building <a href="https://www.documentthing.com/" target="_blank" rel="noopener noreferrer" class="link">Documentthing</a> - a code documentation creation platform that seamlessly integrates with github. With some side projects have 2+ years of experience in creating, breaking, fixing UI's and Functionality across the web. Tinkering around to gain knowledge how to build high-scalable systems and architectural stuff.
         </p>
@@ -70,7 +89,7 @@
       </section>
 
       <section class="tech">
-        <p class="section-title">Technologies I have worked with</p>
+        <h2 class="section-title">Technologies I have worked with</h2>
         <p class="tech-intro">The below mentioned list is a subset of all type of stack I have worked with, you can checkout my <a href="#Projects" class="link">projects</a> to know more.</p>
         <dl class="tech-list">
           <div class="tech-row">
@@ -93,34 +112,34 @@
       </section>
 
       <section class="exp" id="Experience">
-        <p class="section-title">Experience</p>
-        <dl class="exp-list">
+        <h2 class="section-title">Experience</h2>
+        <div class="exp-list">
           <div class="exp-item">
             <div class="exp-head">
-              <dt>01/2025 - Present</dt>
-              <dd>Software Developer Engineer 2 @ AECINSPIRE</dd>
+              <div class="exp-time">01/2025 - Present</div>
+              <div class="exp-role">Software Developer Engineer 2 @ AECINSPIRE</div>
             </div>
             <p class="exp-comment">As the company structure was reformed I was assigned role of SDE 2 but this is equivalent to SDE 1 compared to market standards.</p>
           </div>
           <div class="exp-item">
             <div class="exp-head">
-              <dt>05/2023 - 01/2025</dt>
-              <dd>Junior UI Developer @ AECINSPIRE</dd>
+              <div class="exp-time">05/2023 - 01/2025</div>
+              <div class="exp-role">Junior UI Developer @ AECINSPIRE</div>
             </div>
             <p class="exp-comment">In this time period I transitioned from UI to full fledged Frontend Role.</p>
           </div>
           <div class="exp-item">
             <div class="exp-head">
-              <dt>12/2022 - 05/2023</dt>
-              <dd>Frontend Intern @ AECINSPIRE</dd>
+              <div class="exp-time">12/2022 - 05/2023</div>
+              <div class="exp-role">Frontend Intern @ AECINSPIRE</div>
             </div>
           </div>
-        </dl>
+        </div>
       </section>
 
       <section class="projects" id="Projects">
-        <p class="section-title">Projects</p>
-        <dl class="projects-list">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-list">
           <div class="project-item">
             <div class="project-head">
               <div>
@@ -155,8 +174,9 @@
             </div>
             <div class="project-desc">To deepen my understanding of modern web development, I built a fully functional e-commerce application using React on the frontend and Go on the backend. This project allowed me to explore key concepts like state management, component design, and API integration in React, while also honing my backend skills with Go for handling secure and efficient server-side operations. I integrated Stripe for seamless payment processing, which provided valuable insights into handling payment workflows and managing sensitive data. This hands-on experience not only strengthened my technical skills but also gave me a holistic view of building and deploying full-stack applications.</div>
           </div>
-        </dl>
+        </div>
       </section>
+      </main>
 
       <footer class="footer">© Akash Dhiwar 2026.</footer>
 
