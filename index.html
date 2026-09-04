@@ -1,17 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Akash Dhiwar</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Akash Dhiwar — Software Developer</title>
+  <meta name="description" content="Akash Dhiwar is a software developer building Documentthing, a code documentation platform. 2+ years of experience across React, Golang, and TypeScript." />
+  <meta name="author" content="Akash Dhiwar" />
+  <link rel="canonical" href="https://akashdhiwar.vercel.app/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://akashdhiwar.vercel.app/" />
+  <meta property="og:site_name" content="Akash Dhiwar" />
+  <meta property="og:title" content="Akash Dhiwar — Software Developer" />
+  <meta property="og:description" content="Software developer building Documentthing, a code documentation platform. 2+ years of experience across React, Golang, and TypeScript." />
+  <meta property="og:image" content="https://akashdhiwar.vercel.app/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@akashgotnochill" />
+  <meta name="twitter:title" content="Akash Dhiwar — Software Developer" />
+  <meta name="twitter:description" content="Software developer building Documentthing, a code documentation platform. 2+ years of experience across React, Golang, and TypeScript." />
+  <meta name="twitter:image" content="https://akashdhiwar.vercel.app/og-image.png" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="container">
+
+      <header class="header">
+        <img class="avatar" src="profile.webp" alt="Akash Dhiwar" />
+        <div class="header-info">
+          <p class="name">Akash Dhiwar</p>
+          <nav class="nav">
+            <a href="#About">About</a>
+            <a href="#Experience">Experience</a>
+            <a href="#Projects">Projects</a>
+          </nav>
+        </div>
+      </header>
+
+      <section class="about" id="About">
+        <p class="section-title">Hi there,</p>
+        <p class="about-text">
+          Building <a href="https://www.documentthing.com/" target="_blank" rel="noopener noreferrer" class="link">Documentthing</a> - a code documentation creation platform that seamlessly integrates with github. With some side projects have 2+ years of experience in creating, breaking, fixing UI's and Functionality across the web. Tinkering around to gain knowledge how to build high-scalable systems and architectural stuff.
+        </p>
+        <div class="socials">
+          <p>Find me on</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/akash-dhiwar-b448051a9/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 24" fill="#0A66C2" stroke="#0A66C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://x.com/akashgotnochill" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 24" fill="#1DA1F2" stroke="#1DA1F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+            </a>
+            <a href="https://github.com/Akshdhiwar" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 24" fill="#d4d4d4" stroke="#d4d4d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="tech">
+        <p class="section-title">Technologies I have worked with</p>
+        <p class="tech-intro">The below mentioned list is a subset of all type of stack I have worked with, you can checkout my <a href="#Projects" class="link">projects</a> to know more.</p>
+        <dl class="tech-list">
+          <div class="tech-row">
+            <dt><span class="dt-label">Programming Languages</span><span> : </span></dt>
+            <dd>Typescript, Golang, C++</dd>
+          </div>
+          <div class="tech-row">
+            <dt><span class="dt-label">UI Frameworks</span><span> : </span></dt>
+            <dd>React, Angular, Tailwind</dd>
+          </div>
+          <div class="tech-row">
+            <dt><span class="dt-label">Database</span><span> : </span></dt>
+            <dd>Postgres</dd>
+          </div>
+          <div class="tech-row">
+            <dt><span class="dt-label">Platform/Cloud</span><span> : </span></dt>
+            <dd>I'm exploring different areas now, but it's in my future plans.</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="exp" id="Experience">
+        <p class="section-title">Experience</p>
+        <dl class="exp-list">
+          <div class="exp-item">
+            <div class="exp-head">
+              <dt>01/2025 - Present</dt>
+              <dd>Software Developer Engineer 2 @ AECINSPIRE</dd>
+            </div>
+            <p class="exp-comment">As the company structure was reformed I was assigned role of SDE 2 but this is equivalent to SDE 1 compared to market standards.</p>
+          </div>
+          <div class="exp-item">
+            <div class="exp-head">
+              <dt>05/2023 - 01/2025</dt>
+              <dd>Junior UI Developer @ AECINSPIRE</dd>
+            </div>
+            <p class="exp-comment">In this time period I transitioned from UI to full fledged Frontend Role.</p>
+          </div>
+          <div class="exp-item">
+            <div class="exp-head">
+              <dt>12/2022 - 05/2023</dt>
+              <dd>Frontend Intern @ AECINSPIRE</dd>
+            </div>
+          </div>
+        </dl>
+      </section>
+
+      <section class="projects" id="Projects">
+        <p class="section-title">Projects</p>
+        <dl class="projects-list">
+          <div class="project-item">
+            <div class="project-head">
+              <div>
+                <div class="project-title-row">
+                  <p>Documentthing&nbsp;</p>
+                  <p class="tag tag-cyan">[SAAS]&nbsp;</p>
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.documentthing.com" class="pulse-link" aria-label="Visit Documentthing">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                  </a>
+                </div>
+                <div class="project-tools">[React, Golang , Tailwind , Axios, CloudFlare R2]</div>
+              </div>
+              <span class="status-dot" tabindex="0" data-tooltip="Active Development">
+                <span class="status-dot-ping"></span>
+                <span class="status-dot-core"></span>
+              </span>
+            </div>
+            <div class="project-desc">Meet DocumentThing — a documentation tool designed to make life easier for developers. I&rsquo;ve been where you are, battling clunky tools that break your flow. That&rsquo;s why I created DocumentThing—a simple, powerful solution to help you document your code without the headaches. Save your docs directly to GitHub, collaborate with your teammates, and export in Markdown or HTML with ease. The rich-text editor makes writing a breeze, and inviting your team to contribute is seamless. And soon, you&rsquo;ll even be able to publish your docs online in just one click. It&rsquo;s everything you need to document smarter, not harder.</div>
+          </div>
+
+          <div class="project-item">
+            <div class="project-head">
+              <div>
+                <div class="project-title-row">
+                  <p>Dumbles.io&nbsp;</p>
+                  <a target="_blank" rel="noopener noreferrer" href="https://dumbles.vercel.app/dashboard" class="pulse-link" aria-label="Visit Dumbles.io">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                  </a>
+                </div>
+                <div class="project-tools">[React, Golang , Tailwind , Redis, Axios, Stripe]</div>
+              </div>
+            </div>
+            <div class="project-desc">To deepen my understanding of modern web development, I built a fully functional e-commerce application using React on the frontend and Go on the backend. This project allowed me to explore key concepts like state management, component design, and API integration in React, while also honing my backend skills with Go for handling secure and efficient server-side operations. I integrated Stripe for seamless payment processing, which provided valuable insights into handling payment workflows and managing sensitive data. This hands-on experience not only strengthened my technical skills but also gave me a holistic view of building and deploying full-stack applications.</div>
+          </div>
+        </dl>
+      </section>
+
+      <footer class="footer">© Akash Dhiwar 2026.</footer>
+
+    </div>
+  </div>
+</body>
 </html>
